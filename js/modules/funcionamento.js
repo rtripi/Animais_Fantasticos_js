@@ -1,16 +1,19 @@
-export default function initAccordion() {
-  const accordionList = document.querySelectorAll(".js-accordion dt");
-  const activeClass = "ativo";
+export default function initfuncionamento() {}
 
-  accordionList[0].classList.add(activeClass);
-  accordionList[0].nextElementSibling.classList.add(activeClass);
+const funcionamento = document.querySelector("[data-semana]");
+const diaSemana = funcionamento.dataset.semana.split(",").map(Number);
+const horarioSemana = funcionamento.dataset.horario.split(",").map(Number);
 
-  function activeAccordion() {
-    //console.log(this);
-    this.classList.toggle(activeClass);
-    this.nextElementSibling.classList.toggle(activeClass);
-  }
-  accordionList.forEach((item) => {
-    item.addEventListener("click", activeAccordion);
-  });
+const dtAgora = new Date();
+
+const diaAgora = dtAgora.getDay();
+const horarioAgora = dtAgora.getHours();
+
+const semanaAberto = diaSemana.indexOf(diaAgora) !== -1;
+
+const horarioAberto =
+  horarioAgora >= horarioSemana[0] && horarioAgora < horarioSemana[1];
+
+if (semanaAberto && horarioAberto) {
+  funcionamento.classList.add("aberto");
 }
