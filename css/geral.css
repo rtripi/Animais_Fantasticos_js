@@ -320,6 +320,12 @@ body {
   margin-left: 4px;
 }
 
-[data-semana].aberto:: {
+[data-semana].aberto::after {
   background: green;
+}
+
+.btc-preco {
+  background: green;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
 }
