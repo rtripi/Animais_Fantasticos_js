@@ -9,18 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rtripi/JS_COURSE_website.git"
+    "url": "git+https://github.com:rtripi/Animais_js.git"
   },
   "keywords": [
     "javascript",
     "begginer"
   ],
-  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rtripi/JS_COURSE_website/issues"
-  },
-  "homepage": "https://github.com/rtripi/JS_COURSE_website#readme",
   "devDependencies": {
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
