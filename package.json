@@ -1,0 +1,34 @@
+{
+  "name": "exercicio_origamid_js",
+  "version": "1.0.0",
+  "description": "web to practice js",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack --mode production ./js/script.js -o main.js",
+    "dev": "webpack --mode development --watch ./js/script.js -o main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rtripi/JS_COURSE_website.git"
+  },
+  "keywords": [
+    "javascript",
+    "begginer"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rtripi/JS_COURSE_website/issues"
+  },
+  "homepage": "https://github.com/rtripi/JS_COURSE_website#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.25.2",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "eslint-config-prettier": "^8.3.0"
+  }
+}

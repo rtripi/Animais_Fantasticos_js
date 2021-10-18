@@ -14,10 +14,8 @@ import initFetchBTC from "./modules/fetchBtc.js";
 initTabNav();
 
 initAccordion();
-
-initScrollSuave();
-
 initAnimacaoScroll();
+initScrollSuave();
 
 initModal();
 
