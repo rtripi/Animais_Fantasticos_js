@@ -1,5 +1,3 @@
-import initAnimacaoScroll from "./scroll-animacao";
-
 export default class Modal {
   constructor(openBTN, closeBTN, container) {
     this.botaoAbrir = document.querySelector(openBTN);
@@ -36,5 +34,6 @@ export default class Modal {
     if (this.botaoAbrir && this.botaoFechar && this.containerModal) {
       this.addModalEvents();
     }
+    return this;
   }
 }
