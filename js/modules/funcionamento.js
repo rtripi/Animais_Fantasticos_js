@@ -13,8 +13,8 @@ export default class Funcionamento {
 
   dadosAgora() {
     this.dtAgora = new Date();
-    this.diaAgora = dtAgora.getDay();
-    this.horarioAgora = dtAgora.getUTCHours() - 3;
+    this.diaAgora = this.dtAgora.getDay();
+    this.horarioAgora = this.dtAgora.getUTCHours() - 3;
   }
 
   estaAberto() {
